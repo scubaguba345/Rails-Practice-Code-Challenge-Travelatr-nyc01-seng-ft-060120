@@ -1,0 +1,21 @@
+<h1>Post Page</h1>
+
+<br>
+<h1><%=@post.title%></h1>
+<br>
+<h1><%=@post.content%></h1>
+<br>
+<h1><%=@post.likes%></h1>
+<br>
+<h1><%=@post.blogger_id%></h1>
+<br>
+<h1><%=@post.destination_id%></h1>
+<br>
+
+
+<%=link_to "Edit This Post", edit_post_path(@post)%>
+<br>
+<%=link_to "Enter A New Post", new_blogger_path(@post)%>
+<br>
+<%=link_to "Back To Index Page", posts_path%>
+
